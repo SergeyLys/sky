@@ -1,0 +1,96 @@
+extends templates/pageTemplate
+
+block tmpVars
+    - var bodyClass = '';
+
+block title
+    title Site title
+
+block script
+    script(type='text/javascript').
+        var vars = {
+            ajaxUrl: "",
+            page: 'projects_page'
+        };
+
+block content
+    main.site-main
+      section.section-offset
+        .row.align-center
+          .small-12.large-10.columns
+            .section-title.text-center
+              h2 Our projects
+            .section-title-text.text-center
+              p Sky Development company carries out a full investment and construction cycle from designing to commissioning, both high-rise buildings and residential complexes of small number of storeys.
+        .services-wrapper
+          .row.expanded.content-offset.service-item
+            .small-12.medium-6.columns.no-padding.image-holder
+              img(src="../images/hs/1.jpg", alt="pic")
+            .small-12.medium-6.columns
+              .project-item-content
+                .b-info_item.case-2
+                  .title
+                      h3 Projects for building construction facilities
+                  .content
+                    ul
+                      li - architectural projects,
+                      li - construction projects,
+                      li - projects of water supply and sewerage in the facilities,
+                      li - installation projects for low and high voltage in the facilities,
+                      li - interior design,
+                      li - planning project of free spaces.
+          .row.expanded.content-offset.service-item
+            .small-12.medium-6.columns.no-padding.image-holder
+              img(src="../images/hs/2.jpg", alt="pic")
+            .small-12.medium-6.columns
+              .project-item-content
+                .b-info_item.case-2
+                  .title
+                      h3 Projects for civil engineering facilities
+                  .content
+                    ul
+                      li - road projects,
+                      li - hydro installation projects,
+                      li - projects of sanitary and storm water sewage,
+                      li - projects of electric power installations,
+                      li - geodetic survey and marking.
+
+      section.section-offset
+        .row.expanded.align-center.content-offset
+          .small-12.columns.no-padding
+              .center-slider.offset-slider.case-2
+                  .slide-item
+                      .image-holder.has-background(style='background-image: url(../images/glav_car/1.jpg)')
+                  .slide-item
+                      .image-holder.has-background(style='background-image: url(../images/glav_car/2.jpg)')
+                  .slide-item
+                      .image-holder.has-background(style='background-image: url(../images/glav_car/3.jpg)')
+                  .slide-item
+                      .image-holder.has-background(style='background-image: url(../images/glav_car/4.jpg)')
+                  .slide-item
+                      .image-holder.has-background(style='background-image: url(../images/glav_car/5.jpg)')
+                  .slide-item
+                      .image-holder.has-background(style='background-image: url(../images/glav_car/6.jpg)')
+
+      section.section-offset
+        .row.align-center
+          .small-12.large-10.columns
+            .section-title.text-center
+              h2 Project planning
+            .section-title-text.text-center
+              p One of the most important stages of building a house is design. It is at this stage that the future house looks like what it will be like, what will be the layout of the house, what materials will be built. You can visit the current and ready-made objects of the company Sky Development, see the layout of the houses and choose the liking.
+              p Our specialists will make necessary changes to it. If an individual project is chosen, then at the design stage you need to think through all the details..
+              p.text-center
+                a(href="#").readmore All presentation you can see here
+              p.text-center
+                a(href="#").button Find your home
+
+            .home-verical-slider.case-1
+              .slide-item
+                  .row
+                      .small-12.columns.image-holder
+                          img(src="../images/bb-s.jpg", alt="pic")
+              .slide-item
+                  .row
+                      .small-12.columns.image-holder
+                          img(src="../images/bb-s.jpg", alt="pic")

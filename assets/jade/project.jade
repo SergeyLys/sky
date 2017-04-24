@@ -1,0 +1,95 @@
+extends templates/pageTemplate
+
+block tmpVars
+    - var bodyClass = '';
+
+block title
+    title Site title
+
+block script
+    script(type='text/javascript').
+        var vars = {
+            ajaxUrl: "",
+            page: 'projects_page'
+        };
+
+block content
+    main.site-main
+      section.section-offset
+        .row.align-center
+          .small-12.large-10.columns
+            .section-title.text-center
+              h2 VILLA MONICA
+            .section-title-text.text-center
+              p Ideal location on the shore of Kostorica, an area of 512 meters, all communal and other payments necessary for construction have been paid. For sale land with an existing building permit and a project, and it is also possible to build this residential project
+
+        .row.expanded.content-offset
+          .small-12.columns.no-padding
+            .about-project
+              .image-holder
+                img(src="../images/hs/1.jpg", alt="pic")
+              .info-block
+                .b-info_item.case-3
+                  .title
+                      h3 Facilities Villa Monica
+                  .content
+                    p 4 rooms, ground floor (garage), it also has a cellar of about 12m², bathroom (bath, shower, toilet), kitchen-dining room; 15 hectare plot, a young and already fertile garden (see photo of the crop in 2015); 3 kinds of heating (electric boiler, solid fuel, gas). Near the lake, forest, train in 15 min. Metal tiles are attached, along the perimeter of the plot - a concrete fence in the form of a decorative stone.
+                  a(href="#").button FIND YOUR HOME
+      
+      section.section-offset
+        .row.align-center
+          .small-12.large-10.columns
+            .section-title-text.text-center
+              p Elite cottage town of a closed type with direct access to the park to the healing spring of Feofania. The house of 2009, a modern project, using exclusive imported building materials. Branded household appliances. Smart home system, a single stereo system of the whole house, fireplace, sauna, fitness room, video surveillance, alarm system, security system, backup generator with a separate line throughout the house. The landscape of the territory, garage, automatic gates, decent neighbors.
+              p.text-center
+                a(href="#").readmore All presentation you can see here
+        .row.expanded.content-offset
+          .small-12.columns.no-padding
+            .offset-slider.double-slider.right-controls
+              .slide-item.full-height
+                  .image-holder.has-background(style='background-image: url(../images/hs/1.jpg)')
+              .slide-item.full-height
+                  .image-holder.has-background(style='background-image: url(../images/hs/2.jpg)')
+              .slide-item.full-height
+                  .image-holder.has-background(style='background-image: url(../images/hs/3.jpg)')
+              .slide-item.full-height
+                  .image-holder.has-background(style='background-image: url(../images/hs/4.jpg)')
+              .slide-item.full-height
+                  .image-holder.has-background(style='background-image: url(../images/hs/5.jpg)')
+              .slide-item.full-height
+                  .image-holder.has-background(style='background-image: url(../images/hs/6.jpg)')
+
+      section.section-offset
+        .row.align-center
+            .small-12.large-10.columns
+                .section-title.text-center
+                    h2 Realty in progress
+                .home-verical-slider
+                    .slide-item
+                        .row
+                            .small-12.medium-4.columns.content-holder
+                                .b-info_item.case-1
+                                    .title
+                                        h3 Villa Monica
+                                    .content
+                                        p Turner is a North America-based, international construction services company and is a leading builder in diverse market segments. The company has earned recognition for undertaking large, complex projects, fostering innovation, embracing emerging technologies. #[a(href="#").readmore Read more]
+                                    a(href="#").button VIEW ALL PROJECTS
+                            .small-12.medium-8.columns.image-holder
+                                img(src="../images/bb-s.jpg", alt="pic")
+                    .slide-item
+                        .row
+                            .small-12.medium-4.columns.content-holder
+                                .b-info_item.case-1
+                                    .title
+                                        h3 Villa Monica
+                                    .content
+                                        p Turner is a North America-based, international construction services company and is a leading builder in diverse market segments. The company has earned recognition for undertaking large, complex projects, fostering innovation, embracing emerging technologies. #[a(href="#").readmore Read more]
+                                    a(href="#").button VIEW ALL PROJECTS
+                            .small-12.medium-8.columns.image-holder
+                                img(src="../images/bb-s.jpg", alt="pic")
+      section.section-offset
+        .row.expanded.content-offset
+          .small-12.columns.no-padding
+            .video-wrap
+              .overlay(data-id='8Za7yKyGrzw' style='background-image: url(../images/hs/1.jpg)')
+              .iframe-box

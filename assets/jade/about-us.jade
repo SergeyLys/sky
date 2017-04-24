@@ -1,0 +1,54 @@
+extends templates/pageTemplate
+
+block tmpVars
+    - var bodyClass = '';
+
+block title
+    title Site title
+
+block script
+    script(type='text/javascript').
+        var vars = {
+            ajaxUrl: "",
+            page: 'common_page'
+        };
+
+block content
+    main.site-main
+      section.section-offset
+        .row.align-center
+          .small-12.large-10.columns
+            .section-title.text-center
+              h2 OUR SERVICES
+            .section-title-text.text-center
+              p We always take care of the time of our customers and partners. That is why we provide full legal and intermediary support for the acquisition of real estate in Montenegro, making the process of buying or selling as fast, comfortable and safe for you.
+        
+        .services-wrapper
+          .row.service-item
+            .small-12.medium-6.columns.image-holder
+              img(src="../images/hs/1.jpg", alt="pic")
+            .small-12.medium-6.columns
+              .project-item-content
+                .b-info_item.case-4
+                  .title
+                  .content
+                    p The group of companies Sky Development has been successfully operating in the real estate market for more than ten years. To date, the main scope of our activities is to provide intermediary services in the purchase and sale of finished objects, as well as land for construction in an incredibly colorful country called Montenegro.
+          .row.service-item
+            .small-12.medium-6.columns.image-holder
+              img(src="../images/hs/2.jpg", alt="pic")
+            .small-12.medium-6.columns
+              .project-item-content
+                .b-info_item.case-4
+                  .title
+                  .content
+                    p Our company has clear standards for selection of building companies that will meet the requirements of our customers to the maximum. We constantly grow, improve and work on the quality of our services. A team of experts in the field of overseas real estate with special care and pedantry comes to the point, because our mission is to make your dreams come true!
+
+      section.section-offset
+        .row.align-center.expanded.b-text-center.has-background.case-1(style='background-image: url(../images/hs/1.jpg)')
+          .small-12.large-10.xlarge-6.columns
+            .text-holder.text-center
+              p Our activity is to fully support the clients and partners of the company at all stages of the acquisition of real estate in Montenegro.
+        .row.align-center.expanded.b-text-center.case-2
+          .small-12.large-10.xlarge-6.columns
+            .text-holder.text-center
+              p Sky Development company will help you with confidence to purchase your dream home, provide professional legal advice on investment projects abroad. We are ready to make the process of purchasing real estate in Montenegro for you the most comfortable and least expensive!

@@ -1,0 +1,98 @@
+extends templates/pageTemplate
+
+block tmpVars
+    - var bodyClass = '';
+
+block title
+    title Site title
+
+block script
+    script(type='text/javascript').
+        var vars = {
+            ajaxUrl: "",
+            page: 'common_page'
+        };
+
+block content
+    main.site-main
+      section.section-offset
+        .row.align-center
+          .small-12.large-10.columns
+            .section-title.text-center
+              h2 ABOUT MONTENEGRO
+      section.services-wrapper
+        .row.expanded.content-offset.service-item
+          .small-12.medium-6.columns.no-padding.image-holder
+            img(src="../images/hs/1.jpg", alt="pic")
+          .small-12.medium-6.columns
+            .project-item-content
+              .b-info_item.case-4
+                .title
+                .content
+                  p And what do you know about Montenegro? A small state located in Southern Europe. In fact, the beauty and versatility of Montenegro is impressive.
+                  p For most tourists Montenegro is one of the favorite places for recreation and vivid impressions. Here you can easily combine the rest on the sandy shores of the Adriatic Sea with a fairly dense and rich excursion program: visit various architectural sights, see incredible mountain landscapes and colorful bays. And this is not all. Nature has tried to collect almost all of its beauties in one small corner of the world, and they will never cease to admire.
+
+        .row.expanded.content-offset.service-item
+          .small-12.medium-6.columns.no-padding.image-holder
+            img(src="../images/hs/2.jpg", alt="pic")
+          .small-12.medium-6.columns
+            .project-item-content
+              .b-info_item.case-4
+                .title
+                .content
+                  p The azure sea, spacious clean beaches, fantastic coves and bays, a variety of fruits and vegetation, amazing mountain landscapes and rivers, mesmerizing canyons and cozy medieval streets are all a dream country, Montenegro.
+                  p Well, if you want to enjoy local food, picturesque restaurants overlooking the Boka Bay of Kotor will not leave you indifferent.
+      .row.align-center
+        .small-12.large-10
+          .text-section.case-1
+            p About the opening landscapes in Montenegro, you can talk quite a lot, and it seems that you can not see them all in one trip, despite the small area of the country itself, because it can be driven by car in less than one day.
+
+      .row.expanded.align-center.content-offset
+        .small-12.columns.no-padding
+            .center-slider.offset-slider.case-2
+                .slide-item
+                    .image-holder.has-background(style='background-image: url(../images/glav_car/1.jpg)')
+                .slide-item
+                    .image-holder.has-background(style='background-image: url(../images/glav_car/2.jpg)')
+                .slide-item
+                    .image-holder.has-background(style='background-image: url(../images/glav_car/3.jpg)')
+                .slide-item
+                    .image-holder.has-background(style='background-image: url(../images/glav_car/4.jpg)')
+                .slide-item
+                    .image-holder.has-background(style='background-image: url(../images/glav_car/5.jpg)')
+                .slide-item
+                    .image-holder.has-background(style='background-image: url(../images/glav_car/6.jpg)')
+      .row.align-center
+        .small-12.large-10
+          .text-section.case-1
+            p If you are looking for a relaxing holiday, alone with nature and at a democratic price, then Montenegro is an excellent choice.
+
+      .row.expanded.align-center.b-text-center.has-background.case-3(style='background-image: url(../images/hs/1.jpg)')
+        .small-12.large-10.columns
+          .text-holder
+            .b-info_item.case-4.white
+                .title
+                .content
+                  p Required to visit the attractions can be attributed several fabulous places:
+                  ol
+                    li Skadar Lake - the largest and cleanest in all the Balkans.
+                    li The Canyon of the River Tara is the second longest river in the world.
+                    li Glacial lakes with crystal water and snow-capped peaks, as well as the famous Black Lake in the Durmitor National Park.
+                    li Monastery Ostrog, where the relics of St. Basil Ostrozky are kept.
+                    li Kotor Resort, which was declared a UNESCO World Heritage Site due to the diversity of historical monuments of architecture and perfectly preserved medieval structures.
+                  p The climate in Montenegro is considered ideal. Moderate-continental climate in cities, in the mountains - Alpine, and on the shores of the Adriatic Sea - Mediterranean. Summer is always long and hot, and the winter is short and warm.
+                  p Montenegro is very comfortable in matters of processing documents and paying for goods and services. The visa to Montenegro is not needed for most CIS countries, and the currency is the euro. Also, it should be noted that customs and border procedures have been simplified for the guests of Montenegro.
+      .row.align-center
+        .small-12.large-10
+          .text-section.case-1
+            p The best movement around the country will be a bus or a car. On the roads the drivers are quite polite, so the drivers who will overtake the narrow serpentine roads will rarely meet you on the road.
+            p Parking spaces in the cities are free, only in popular tourist centers you can face a shortage of parking spaces.
+            p Communication and Internet access in the cities of Montenegro is not a problem. On the territory of the country there is 3G and almost all institutions have a free wireless network..
+      .row.align-center.expanded.b-text-center.case-2
+          .small-12.large-10
+            .text-section
+              p In Montenegro you can find real estate for every taste. If you adore nature, or like rhythmic life in a metropolis, for you it is absolutely equally possible to try yourself as a resident of this country..
+      .row.expanded.align-center.b-text-center.has-background.case-2(style='background-image: url(../images/hs/1.jpg)')
+        .small-12.large-10.columns
+          .text-holder.text-center
+            p Residents of Montenegro are friendly and very responsive and, in case of what, will not leave you without attention, offering their help in this or that issue. Most recently, the tourism industry in Montenegro began to develop after years of stagnation. Today in any resort town of the country you can find apartments for every taste and budget. It also became popular to purchase real estate on the slopes of the Adriatic Sea. After all, all the favorable factors that exist in Montenegro, provide an opportunity not only to profitable to invest their investments, but also to acquire housing where dreams become a reality.

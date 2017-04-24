@@ -1,0 +1,34 @@
+@mixin ultra_thin() {
+  font-weight: 100;
+}
+
+@mixin thin() {
+  font-weight: 300;
+}
+
+@mixin regular() {
+  font-weight: 500;
+}
+
+@mixin bold() {
+  font-weight: 700;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,92 @@
+extends templates/pageTemplate
+
+block tmpVars
+    - var bodyClass = '';
+
+block title
+    title Site title
+
+block script
+    script(type='text/javascript').
+        var vars = {
+            ajaxUrl: "",
+            page: 'common_page'
+        };
+
+block content
+    main.site-main
+      section.section-offset
+        .row.align-center
+          .small-12.large-10.columns
+            .section-title.text-center
+              h2 OUR SERVICES
+            .section-title-text.text-center
+              p We always take care of the time of our customers and partners. That is why we provide full legal and intermediary support for the acquisition of real estate in Montenegro, making the process of buying or selling as fast, comfortable and safe for you.
+        .services-grid
+          .row.align-center
+            .small-12.large-10.xlarge-6.columns
+              .section-title.text-center
+                  h3 Sky Development offers a wide range of real estate services, namely:
+          .row.expanded
+            .small-12.medium-6.large-4.columns.service-item
+              .text-center.service-item_wrapper
+                .service_icon
+                  img(src='../images/service/build.png' alt='pic')
+                .service_text
+                  p Sale of newly built apartment as well as off plan ones
+            .small-12.medium-6.large-4.columns.service-item
+              .text-center.service-item_wrapper
+                .service_icon
+                  img(src='../images/service/home.png' alt='pic')
+                .service_text
+                  p Sale of newly built apartment as well as off plan ones
+            .small-12.medium-6.large-4.columns.service-item
+              .text-center.service-item_wrapper
+                .service_icon
+                  img(src='../images/service/city.png' alt='pic')
+                .service_text
+                  p Sale of construction plot for building of tourist complex, settlements and hotels
+            .small-12.medium-6.large-4.columns.service-item
+              .text-center.service-item_wrapper
+                .service_icon
+                  img(src='../images/service/shop.png' alt='pic')
+                .service_text
+                  p Sale of construction plot for building of business – residential object
+            .small-12.medium-6.large-4.columns.service-item
+              .text-center.service-item_wrapper
+                .service_icon
+                  img(src='../images/service/human.png' alt='pic')
+                .service_text
+                  p Sale of construction plot for building of business – residential object
+            .small-12.medium-6.large-4.columns.service-item
+              .text-center.service-item_wrapper
+                .service_icon
+                  img(src='../images/service/pencil.png' alt='pic')
+                .service_text
+                  p Designing of conceptual and main projects of residential, commercial, business and tourist facilities
+            .small-12.medium-6.large-4.columns.service-item
+              .text-center.service-item_wrapper
+                .service_icon
+                  img(src='../images/service/xz.png' alt='pic')
+                .service_text
+                  p Furnishing of residential, business and tourist objects
+            .small-12.medium-6.large-4.columns.service-item
+              .text-center.service-item_wrapper
+                .service_icon
+                  img(src='../images/service/paper.png' alt='pic')
+                .service_text
+                  p Obtaining of all necessary  permits for construction of objects
+            .small-12.medium-6.large-4.columns.service-item
+              .text-center.service-item_wrapper
+                .service_icon
+                  img(src='../images/service/bag.png' alt='pic')
+                .service_text
+                  p Services of legal aid related to projects and investments
+        .row.align-center
+          .small-12.large-10.xlarge-6
+            .text-section
+              p If you want to buy an apartment, a house, a site for construction or you want to become a co-investor in construction - Sky Development company will surely help you with this!
+        .row.expanded.b-text-center.has-background.case-2(style='background-image: url(../images/hs/1.jpg)')
+          .small-12.columns
+            .text-holder.text-center
+              p Sky Development company will help you with confidence to purchase your dream home, provide professional legal advice on investment projects abroad. We are ready to make the process of purchasing real estate in Montenegro for you the most comfortable and least expensive!

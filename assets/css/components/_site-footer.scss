@@ -1,0 +1,55 @@
+.site-footer {
+	padding-top: 175px;
+	padding-bottom: 60px;
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		left: auto;
+		top: 100px;
+		height: 1px;
+		background: rgba($black, .05);
+	}
+
+	.column-count {
+		@include  breakpoint(medium) {
+			column-count: 2;
+		}
+
+		@include  breakpoint(large) {
+			column-count: 3;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			line-height: 30px;
+		}
+	}
+
+	a {
+		color: #cdcdcd;
+
+		&:hover {
+			color: $black;
+		}
+	}
+}
+
+.socials {
+	display: flex;
+
+	li {
+		margin-right: 10px;
+	}
+}
+
+.footer-row {
+	margin-top: 25px;
+}

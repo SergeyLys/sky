@@ -1,0 +1,22 @@
+@import "libs/foundation/settings/settings";
+@import "libs/foundation/foundation";
+
+@import "libs/variables";
+@import "libs/mixins";
+@import "libs/fonts";
+@import "libs/slick/_slick.scss";
+@import "libs/slick/_slick-theme.scss";
+@import "libs/_select2.scss";
+
+@import "components/site-header";
+@import "components/site-footer";
+
+@import "components/global";
+@import "components/_sliders.scss";
+
+// Home
+@import "components/_homeInfo.scss";
+@import "components/_homeContacts.scss";
+
+// Projects
+@import "components/_projectsComponents.scss";

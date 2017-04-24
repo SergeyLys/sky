@@ -1,0 +1,135 @@
+.b-info_item {
+	margin-bottom: 50px;
+
+	@include breakpoint(large) {
+		margin-bottom: 100px;
+		width: 75%;
+	}
+
+	.title {
+		position: relative;
+		padding-bottom: 25px;
+		margin-bottom: 55px;
+
+		h3 {
+			margin: 0;
+			color: #494949;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			height: 30px;
+			width: 1px;
+			background: $black;
+		}
+	}
+
+	.content {
+		margin-bottom: 50px;
+
+		p,
+		li {
+			color: #4a494a;
+			font-size: 14px;
+		}
+	}
+
+	&.case-1 {
+		margin-bottom: 25px;
+
+		@include breakpoint(large) {
+			margin-bottom: 25px;
+			width: 100%;
+		}
+
+		.content {
+			margin-bottom: 50px;
+		}
+
+		.title {
+			margin-bottom: 25px;
+
+			&:before {
+				width: 30px;
+				height: 1px;
+			}
+		}
+	}
+
+	&.case-2 {
+		width: 100%;
+		margin-bottom: 0;
+
+		.content {
+			margin-bottom: 0;
+		}
+
+		.title {
+			margin-bottom: 50px;
+			padding-bottom: 0;
+			padding-top: 50px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 1px;
+				width: 30px;
+				background: rgba($black, .8);
+			}
+		}
+	}
+
+	&.case-3 {
+		@include breakpoint(xlarge) {
+			.title {
+				margin-bottom: 80px;
+				padding-bottom: 0;
+
+				&:before {
+					content: '';
+					position: absolute;
+					top: 10px;
+					left: -50px;
+					height: 1px;
+					width: 30px;
+					background: rgba($black, .8);
+				}
+			}
+		}
+	}
+
+	&.case-4 {
+		width: 100%;
+
+		.title {
+			margin-bottom: 0;
+			padding-bottom: 40px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 1px;
+				width: 30px;
+				background: rgba($black, .8);
+			}
+		}
+	}
+
+	&.white {
+		.content p, 
+		.content li {
+			color: $white;
+		}
+
+		.title:before {
+			background: $white;
+		}
+	}
+}
