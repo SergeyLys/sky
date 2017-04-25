@@ -34,6 +34,7 @@
 		li {
 			color: #4a494a;
 			font-size: 14px;
+			line-height: 30px;
 		}
 	}
 
@@ -93,7 +94,7 @@
 				&:before {
 					content: '';
 					position: absolute;
-					top: 10px;
+					top: 15px;
 					left: -50px;
 					height: 1px;
 					width: 30px;

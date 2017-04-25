@@ -22,6 +22,14 @@
       }
     }
   }
+
+  &.small {
+    .project-item-content {
+      @include breakpoint(xlarge) {
+        padding: 100px 115px;
+      }
+    }
+  }
 }
 
 .project-item-content {
@@ -32,7 +40,17 @@
   }
 
   @include breakpoint(xlarge) {
-    padding: 100px 170px;
+    padding: 100px 155px;
+
+    .b-info_item {
+      max-width: 450px;
+    }
+  }
+
+  .b-info_item {
+    .content p {
+      line-height: 30px;
+    }
   }
 }
 

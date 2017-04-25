@@ -30,6 +30,10 @@ ul {
   list-style-type: none;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -84,7 +88,9 @@ select {
   border-radius: 6px;
   color: $white;
   padding: 11px 15px 11px 5px;
-  background: transparent;
+  background: transparent url(../images/select-arrow.png);
+  background-position: calc(100% - 10px) center;
+  background-repeat: no-repeat;
   font-size: 12px;
   cursor: pointer;
 }
@@ -158,6 +164,7 @@ select {
 
     p {
       color: $white;
+      line-height: 30px;
     }
   }
 
@@ -166,10 +173,18 @@ select {
     margin-left: auto;
     margin-right: auto;
 
-
     p {
       color: $white;
       font-size: 18px;
+      line-height: 30px;
+    }
+
+    .b-info_item {
+      margin-bottom: 0 !important;
+
+      p {
+        margin-bottom: 30px;
+      }
     }
   }
 

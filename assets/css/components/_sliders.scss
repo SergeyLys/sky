@@ -100,7 +100,9 @@
     right: 20px;
 
     @include breakpoint(large) {
-      top: calc(50% - 30px)
+      top: calc(50% - 30px);
+      background: url(../images/slick-next.svg) no-repeat center;
+      border-color: transparent;
     }
   }
 
