@@ -68,6 +68,12 @@ ul {
   p {
     color: #4a494a;
   }
+
+  @include breakpoint(large) {
+    .button {
+      min-width: 220px;
+    }
+  }
 }
 
 .section {

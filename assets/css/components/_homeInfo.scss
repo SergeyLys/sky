@@ -4,6 +4,10 @@
 	@include breakpoint(large) {
 		margin-bottom: 100px;
 		width: 75%;
+
+		.button {
+			min-width: 220px;
+		}
 	}
 
 	.title {

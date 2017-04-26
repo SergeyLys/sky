@@ -63,6 +63,16 @@
     @include breakpoint(xlarge) {
       margin-bottom: 100px;
       width: calc(100% - 100px);
+      position: relative;
+      padding-top: 54%;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
 
     img {
@@ -138,7 +148,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    background: rgba($blue, .6);
+    background: rgba($blue, .76);
   }
 
   &:after {
