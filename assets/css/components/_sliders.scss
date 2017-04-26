@@ -304,6 +304,19 @@
       img {
         width: 100%;
       }
+
+      @include breakpoint(xlarge) {
+        position: relative;
+        overflow: hidden;
+        padding-top: 73%;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
     }
   }
 
