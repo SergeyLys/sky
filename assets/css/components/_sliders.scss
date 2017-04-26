@@ -98,11 +98,11 @@
 
   .slick-next {
     right: 20px;
+    background: url(../images/slick-next.svg) no-repeat center;
+    border-color: transparent;
 
     @include breakpoint(large) {
       top: calc(50% - 30px);
-      background: url(../images/slick-next.svg) no-repeat center;
-      border-color: transparent;
     }
   }
 
