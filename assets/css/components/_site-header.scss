@@ -4,10 +4,20 @@
 
 .phone-icon {
   position: relative;
+  margin-bottom: 15px;
   margin-right: 15px;
+
+  @include breakpoint(medium) {
+    margin-bottom: 0;
+  }
 
   img {
     margin-left: 15px;
+    display: none;
+
+    @include breakpoint(medium) {
+      display: inline-block;
+    }
   }
 }
 
@@ -80,7 +90,7 @@
   @include breakpoint(medium) {
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 45px;
   }
 
   @include breakpoint(xlarge) {
@@ -93,17 +103,21 @@
     padding-right: 100px;
   }
 
+  @media(min-width: 1440px) {
+    padding-bottom: 100px;
+  }
+
   h1 {
     font-style: normal;
     font-stretch: normal;
     font-weight: 300;
     text-align: right;
     text-transform: uppercase;
-    line-height: 1;
     color: $white;
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: 'avenir', sans-serif;
+    line-height: 1.5;
 
     span {
       display: block;
@@ -111,6 +125,8 @@
 
     @include breakpoint(medium) {
       font-size: 40.0px;
+      line-height: 1;
+      margin-bottom: 10px;
     }
 
     @include breakpoint(xlarge) {
@@ -167,7 +183,10 @@
       display: flex;
       margin-bottom: 0;
       align-items: center;
-      justify-content: flex-end;
+
+      @include breakpoint(large) {
+        justify-content: flex-end;
+      }
     }
   }
 }
@@ -186,8 +205,12 @@
 
   @include breakpoint(large) {
     justify-content: flex-end;
-    top: 100px;
+    top: 50px;
     width: calc(37% + 200px);
+  }
+
+  @media (min-width: 1440px) {
+    top: 100px;
   }
 
   .site-nav {
@@ -197,8 +220,12 @@
     left: 0;
     display: none;
     width: 50%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     z-index: 1;
+
+    @include breakpoint(medium) {
+      height: calc(100vh - 100px);
+    }
 
     @include breakpoint(large) {
       left: calc(100% - 200px);
@@ -212,6 +239,14 @@
       flex-direction: column;
       max-height: 450px;
       overflow: auto;
+
+      @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: landscape) {
+          max-height: 250px;
+      }
 
       @include breakpoint(medium) {
         max-height: initial;
@@ -248,6 +283,11 @@
   a {
     display: block;
   }
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .site-nav {
@@ -264,12 +304,12 @@
 
   position: relative;
   width: 100px;
-  height: 100px;
+  height: 70px;
   cursor: pointer;
   display: block;
 
-  @include breakpoint(xlarge) {
-    // display: none;
+  @include breakpoint(medium) {
+    height: 100px;
   }
 
   .sandwich {
