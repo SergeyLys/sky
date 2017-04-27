@@ -1,21 +1,14 @@
 .site-footer {
-	padding-top: 175px;
+	padding-top: 30px;
 	padding-bottom: 60px;
 	position: relative;
 	background: $blue;
 	text-align: center;
 
-	.site-logo {
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.socials {
-		justify-content: center;
-	}
-
-	@include breakpoint(xlarge) {
+	@include breakpoint(medium) {
+		padding-top: 175px;
 		background: transparent;
+		text-align: left;
 
 		.site-logo {
 			margin-left: initial;
@@ -31,6 +24,15 @@
 		.socials {
 			justify-content: flex-start;
 		}
+	}
+
+	.site-logo {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.socials {
+		justify-content: center;
 	}
 
 	&:before {

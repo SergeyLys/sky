@@ -31,11 +31,11 @@ export default {
                 '<span><img class="contextChange" src= "../images/flags/' + state.element.value.split('_')[0].toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
                 );
             return $state;
-        };
+        }
 
         $(".lang").select2({
-            templateResult: formatState,
-            templateSelection: formatState,
+            // templateResult: formatState,
+            // templateSelection: formatState,
             minimumResultsForSearch: Infinity
         });
 
