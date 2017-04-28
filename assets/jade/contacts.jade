@@ -16,77 +16,74 @@ block script
 block content
     main.site-main
       section.section-offset
-        .row.expanded
+        .row.align-center
           .small-12.columns
               .section-title.text-center
-                  h2 Our contacts
-              .content-offset
-                  .row.expanded.box-shadow
-                      .small-12.columns.no-padding
-                          #map(data-lat='42.717184' data-lng='19.373559')
-                      .small-12.large-5.columns.no-padding.blue
-                          .contacts-content
-                              .title
-                                  h3 Our Adress
-                              ul.contacts-info
-                                  li #[span.icon-location] Montenegro, Podgorica 191186 Millionnaya st. 29
-                                  li: a(href="mailto:hello@skydevelopment.com") #[span.icon-mail] hello@skydevelopment.com
-                                  li: a(href="tel:+12223450000") #[span.icon-phone] +1 222-345-0000
-                      .small-12.large-7.columns.no-padding
-                          .contacts-content
-                              .title
-                                  h3 Send us a Message
-                              .form-wrapper.
-                                  <form class="onlineshop_form" id="footerContactForm" name="form[footerContactForm]" action="javascript:footerContactForm(null);" enctype="multipart/form-data">
-                                      <div class='row'>
-                                          <div class="small-12 large-6 columns">
-                                              <div class='mat-div'>
-                                                  <label class="mat-label">Your name</label>
-                                                  <input type="text" name="form_request[footerContactForm][firstname][value]" required="required" class="mat-input">
-                                              </div>
-                                          </div>
+                  h2 What can we offer to you?
+          .small-12.large-8.columns
+              .form-wrapper.contacts-form-wrapper.
+                  <form class="onlineshop_form" id="footerContactForm" name="form[footerContactForm]" action="javascript:footerContactForm(null);" enctype="multipart/form-data">
+                      <div class='row'>
+                          <div class="small-12 large-6 columns">
+                              <div class='mat-div'>
+                                  <label class="mat-label">Your name</label>
+                                  <input type="text" name="form_request[footerContactForm][firstname][value]" required="required" class="mat-input">
+                              </div>
+                          </div>
 
-                                          <div class="small-12 large-6 columns">
-                                              <div class='mat-div'>
-                                                  <label class="mat-label">Email Address</label>
-                                                  <input type="email" name="form_request[footerContactForm][email][value]" required="required" class="mat-input">
-                                              </div>
-                                          </div>
+                          <div class="small-12 large-6 columns">
+                              <div class='mat-div'>
+                                  <label class="mat-label">Email Address</label>
+                                  <input type="email" name="form_request[footerContactForm][email][value]" required="required" class="mat-input">
+                              </div>
+                          </div>
 
-                                          <div class="small-12 large-6 columns">
-                                              <div class='mat-div'>
-                                                  <label class="mat-label">Phone</label>
-                                                  <input type="text" name="form_request[footerContactForm][phone][value]" class="mat-input">
-                                              </div>
-                                          </div>
+                          <div class="small-12 large-6 columns">
+                              <div class='mat-div'>
+                                  <label class="mat-label">Phone</label>
+                                  <input type="text" name="form_request[footerContactForm][phone][value]" class="mat-input">
+                              </div>
+                          </div>
 
-                                          <div class="small-12 large-6 columns">
-                                              <div class='mat-div'>
-                                                  <label class="mat-label">Company</label>
-                                                  <input type="text" name="form_request[footerContactForm][company][value]" class="mat-input">
-                                              </div>
-                                          </div>
+                          <div class="small-12 large-6 columns">
+                              <div class='mat-div'>
+                                  <label class="mat-label">Company</label>
+                                  <input type="text" name="form_request[footerContactForm][company][value]" class="mat-input">
+                              </div>
+                          </div>
 
-                                          <div class="small-12 columns">
-                                              <div class='mat-div'>
-                                                  <label class="mat-label">Message</label>
-                                                  <input type="text" name="form_request[footerContactForm][message][value]" required="required" class="mat-input">
-                                                  <button type="submit" class="bb-t"><img src="../images/send.svg" alt="send"></button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <input type="hidden" name="form_request[footerContactForm][firstname][title]" value="Your name">
-                                      <input type="hidden" name="form_request[footerContactForm][firstname][name]" value="firstname">   
-                                      <input type="hidden" name="form_request[footerContactForm][email][title]" value="Email Address">
-                                      <input type="hidden" name="form_request[footerContactForm][email][name]" value="email">  
-                                      <input type="hidden" name="form_request[footerContactForm][phone][title]" value="Phone">
-                                      <input type="hidden" name="form_request[footerContactForm][phone][name]" value="phone">  
-                                      <input type="hidden" name="form_request[footerContactForm][company][title]" value="Company">
-                                      <input type="hidden" name="form_request[footerContactForm][company][name]" value="company">  
-                                      <input type="hidden" name="form_request[footerContactForm][message][title]" value="Message">
-                                      <input type="hidden" name="form_request[footerContactForm][message][name]" value="message">
-                                      <input type="hidden" name="form_request[form_id]" value="footerContactForm">
-                                      <input type="text" name="form_request[footerContactForm][antibot]" id="antibot" style="display: none;">
-                                      <img id="imgLoad" src="../images/loading.gif" style="display: none;">
-                                  </form>
-        
+                          <div class="small-12 columns">
+                              <div class='mat-div'>
+                                  <label class="mat-label">Message</label>
+                                  <input type="text" name="form_request[footerContactForm][message][value]" required="required" class="mat-input">
+                                  <button type="submit" class="bb-t"></button>
+                              </div>
+                          </div>
+                      </div>
+                      <input type="hidden" name="form_request[footerContactForm][firstname][title]" value="Your name">
+                      <input type="hidden" name="form_request[footerContactForm][firstname][name]" value="firstname">
+                      <input type="hidden" name="form_request[footerContactForm][email][title]" value="Email Address">
+                      <input type="hidden" name="form_request[footerContactForm][email][name]" value="email">
+                      <input type="hidden" name="form_request[footerContactForm][phone][title]" value="Phone">
+                      <input type="hidden" name="form_request[footerContactForm][phone][name]" value="phone">
+                      <input type="hidden" name="form_request[footerContactForm][company][title]" value="Company">
+                      <input type="hidden" name="form_request[footerContactForm][company][name]" value="company">
+                      <input type="hidden" name="form_request[footerContactForm][message][title]" value="Message">
+                      <input type="hidden" name="form_request[footerContactForm][message][name]" value="message">
+                      <input type="hidden" name="form_request[form_id]" value="footerContactForm">
+                      <input type="text" name="form_request[footerContactForm][antibot]" id="antibot" style="display: none;">
+                      <img id="imgLoad" src="../images/loading.gif" style="display: none;">
+                  </form>
+        .row.expanded.align-center.content-offset.contacts-page-info
+          .small-12.xlarge-6.columns.no-padding.blue
+              .contacts-content
+                  .title
+                      h3 Our Adress
+                  ul.contacts-info
+                    li #[span: include ../images/Icon/loc.svg] Montenegro, Podgorica 191186 Millionnaya st. 29
+                    li #[span: include ../images/Icon/mail.svg] #[a(href="mailto:hello@skydevelopment.com")  hello@skydevelopment.com]
+                    li #[span: include ../images/Icon/tel.svg] #[a(href="tel:+12223450000")  +1 222-345-0000] #[a(href="tel:+12223450000")  +1 222-345-0000] #[a(href="tel:+12223450000")  +1 222-345-0000] #[a(href="tel:+12223450000")  +1 222-345-0000]
+
+
+          .small-12.xlarge-6.columns.no-padding
+            #map(data-lat='42.717184' data-lng='19.373559')

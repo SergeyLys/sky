@@ -44,6 +44,12 @@
     a {
       font-size: 16px;
       font-weight: 400;
+      display: inline-block;
+      margin-bottom: 15px;
+
+      @include breakpoint(xlarge) {
+        width: 49%;
+      }
     }
 
     span {
@@ -142,6 +148,34 @@
 
     &:hover {
       box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+  &.contacts-form-wrapper {
+    .mat-div {
+      margin-bottom: 67px;
+    }
+
+    .mat-label,
+    .mat-input {
+      line-height: 2;
+    }
+
+    .bb-t {
+      width: 85px;
+      height: 85px;
+    }
+  }
+}
+
+.contacts-page-info {
+  .no-padding {
+    display: flex;
+
+    #map {
+      height: auto;
+      min-height: 400px;
+      flex-grow: 1;
     }
   }
 }
