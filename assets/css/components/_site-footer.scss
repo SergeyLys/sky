@@ -66,10 +66,14 @@
 	}
 
 	a {
-		color: #cdcdcd;
+		color: $white;
 
-		&:hover {
-			color: $black;
+		@include breakpoint(medium) {
+			color: #cdcdcd;
+
+			&:hover {
+				color: $black;
+			}
 		}
 	}
 }

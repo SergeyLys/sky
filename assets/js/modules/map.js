@@ -16,7 +16,7 @@ export default {
 								center: center,
 								scrollwheel: false,
 								draggable: true,
-								zoomControl: false,
+								zoomControl: true,
 								zoomControlOptions: {
 										position: google.maps.ControlPosition.TOP_RIGHT
 								},
@@ -28,6 +28,7 @@ export default {
 						var marker = new google.maps.Marker({
 								position: center,
 								map: map,
+								icon: $('#map').attr('data-pin'),
 								title: "my place"
 						});
 				});
