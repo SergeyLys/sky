@@ -10,7 +10,7 @@ export default {
 						const dataLat = parseFloat(mapId.attr('data-lat'));
 						const dataLng = parseFloat(mapId.attr('data-lng'));
 						const center = {lat: dataLat, lng: dataLng};
-
+						console.log('map initialize');
 						var map = new google.maps.Map(document.getElementById("map"), {
 								zoom: 16,
 								center: center,

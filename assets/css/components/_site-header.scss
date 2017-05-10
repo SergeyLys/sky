@@ -117,13 +117,10 @@
     padding-right: 100px;
   }
 
-  @include breakpoint(xxlarge) {
-    padding-left: 170px;
-    padding-right: 100px;
-  }
-
   @media(min-width: 1440px) {
     padding-bottom: 100px;
+    padding-left: 170px;
+    padding-right: 100px;
   }
 
   h1 {
@@ -256,7 +253,7 @@
       display: flex;
       width: 100%;
       flex-direction: column;
-      max-height: 450px;
+      max-height: calc(100vh - 70px);
       overflow: auto;
 
       @media only screen 
@@ -264,7 +261,7 @@
         and (max-device-width: 568px)
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: landscape) {
-          max-height: 250px;
+          // max-height: 250px; 
       }
 
       @include breakpoint(medium) {
