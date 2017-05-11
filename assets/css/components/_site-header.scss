@@ -237,7 +237,7 @@
   .site-nav {
     position: absolute;
     background: $blue;
-    top: 100%;
+    top: 70px;
     left: 0;
     display: none;
     width: 50%;
@@ -252,13 +252,14 @@
       left: calc(100% - 200px);
       width: 100%;
       height: auto;
+      top: 100%;
     }
 
     .site-nav_inner {
       display: flex;
       width: 100%;
       flex-direction: column;
-      max-height: 450px;
+      max-height: calc(100vh - 70px);
       overflow: auto;
 
       @media only screen 
@@ -266,7 +267,7 @@
         and (max-device-width: 568px)
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: landscape) {
-          max-height: 250px;
+          //max-height: 250px;
       }
 
       @include breakpoint(medium) {

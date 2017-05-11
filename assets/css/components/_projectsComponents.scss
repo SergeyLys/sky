@@ -14,7 +14,7 @@
       margin-bottom: 0;
     }
 
-    &:nth-child(2n) {
+    &:nth-child(odd) {
       @include breakpoint(medium) {
         .image-holder {
           order: 1;
@@ -27,6 +27,25 @@
     .project-item-content {
       @include breakpoint(xlarge) {
         padding: 100px 115px;
+      }
+    }
+  }
+
+  &.case-2 {
+    .service-item {
+      &:nth-child(odd) {
+        @include breakpoint(medium) {
+          .image-holder {
+            order: 0;
+          }
+        }
+      }
+      &:nth-child(even) {
+        @include breakpoint(medium) {
+          .image-holder {
+            order: 1;
+          }
+        }
       }
     }
   }
