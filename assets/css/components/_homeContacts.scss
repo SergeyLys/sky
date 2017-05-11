@@ -29,9 +29,11 @@
   }
 
   @include breakpoint(xxlarge) {
-    padding: 100px 200px;
+    padding: 100px 100px 100px 200px;
   }
 }
+
+
 
 .contacts-info {
   li {
@@ -49,6 +51,10 @@
 
       @include breakpoint(xlarge) {
         width: 49%;
+
+        .home-page & {
+          width: auto;
+        }
       }
     }
 
