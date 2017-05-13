@@ -233,7 +233,7 @@
   .site-nav {
     position: absolute;
     background: $blue;
-    top: 100%;
+    top: 70px;
     left: 0;
     display: none;
     width: 50%;
@@ -248,6 +248,7 @@
       left: calc(100% - 200px);
       width: 100%;
       height: auto;
+      top: 100%;
     }
 
     .site-nav_inner {

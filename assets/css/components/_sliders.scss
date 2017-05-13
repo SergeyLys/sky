@@ -226,15 +226,15 @@
 
   .projects-slider-info {
     width: 100%;
-    max-width: 540px;
-    background: $blue;
+    max-width: 425px;
+    background: rgba($blue, .8);
     margin-left: auto;
     margin-right: auto;
 
     .b-info_item {
       margin-bottom: 0;
       width: 100%;
-      padding: 80px 30px;
+      padding: 30px 45px;
       margin-top: 30px;
 
       p,
@@ -257,7 +257,7 @@
       right: 115px;
 
       .b-info_item {
-        padding: 80px 100px;
+        //padding: 80px 100px;
         margin-top: 0;
       }
     }
