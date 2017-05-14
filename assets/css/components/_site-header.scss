@@ -138,6 +138,11 @@
 
     span {
       display: block;
+
+      span {
+        display: inline-block;
+        color: $white;
+      }
     }
 
     @include breakpoint(medium) {

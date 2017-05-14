@@ -100,14 +100,14 @@
   }
 
   .info-block {
-    background: $blue;
+    background: rgba($blue, .8);
     padding: 30px;
     max-width: 620px;
     margin-left: auto;
     margin-right: auto;
 
     @include breakpoint(xlarge) {
-      padding: 80px 100px;
+      padding: 60px 80px;
       position: absolute;
       bottom: -100px;
       right: 0;
