@@ -12,10 +12,10 @@ export default {
     headerSlider() {
         $('.site-header_slider').slick({
             dots: true,
-            arrows: false
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000
         });
-
-        
     },
 
     homeProjectSlider() {
