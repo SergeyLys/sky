@@ -3164,9 +3164,10 @@ p + .stat
     font-stretch: normal;
     line-height: 1.5;
 
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
     text-align: right;
+    white-space: nowrap;
     text-transform: uppercase;
 
     color: #fff;
@@ -5224,8 +5225,6 @@ a[href^='https://maps.google.com/maps']
     {
         font-size: 40.0px;
         line-height: 1;
-
-        margin-bottom: 10px;
     }
 
     .site-menu .site-nav

@@ -132,9 +132,10 @@
     text-transform: uppercase;
     color: $white;
     font-size: 30px;
-    margin-bottom: 20px;
     font-family: 'avenir', sans-serif;
     line-height: 1.5;
+    white-space: nowrap;
+    margin-bottom: 50px;
 
     span {
       display: block;
@@ -148,7 +149,7 @@
     @include breakpoint(medium) {
       font-size: 40.0px;
       line-height: 1;
-      margin-bottom: 10px;
+      //margin-bottom: 10px;
     }
 
     @include breakpoint(xlarge) {
