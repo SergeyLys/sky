@@ -92,7 +92,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -55%);
     }
   }
 
@@ -276,6 +276,7 @@
 
 .home-verical-slider {
   margin-bottom: 0 !important;
+  padding-bottom: 50px;
 
   .image-holder {
     img {
@@ -293,6 +294,10 @@
         margin-bottom: 0;
       }
     }
+  }
+
+  @include breakpoint(large) {
+    padding-bottom: 0;
   }
 
   &.case-1 {
@@ -324,7 +329,7 @@
     display: flex;
     width: auto;
     z-index: 1;
-    top: calc(100% + 50px);
+    bottom: 0;
     right: 50%;
     transform: translateX(50%);
     justify-content: center;
