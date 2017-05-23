@@ -113,10 +113,6 @@ export default {
     validation() {
         // $('form').formSubmit();
 
-        $('select.lang').on('change', function() {
-            $(this).closest('form').submit();
-        });
-
         $(".mat-input").focus(function(){
             $(this).parent().addClass("is-active is-completed");
         });

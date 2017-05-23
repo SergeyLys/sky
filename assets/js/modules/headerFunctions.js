@@ -39,6 +39,10 @@ export default {
             minimumResultsForSearch: Infinity
         });
 
+        $('select.lang').on('change', function() {
+            $(this).closest('form').submit();
+        });
+
         // $('.lang').on("select2:select", function(e){
         //     console.log(e.params);
         //     window.location.replace(e.params.data.id.split('_')[1]);

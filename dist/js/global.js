@@ -8051,7 +8051,7 @@ exports.default = {
 };
 
 },{}],5:[function(require,module,exports){
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -8170,10 +8170,6 @@ exports.default = {
     validation: function validation() {
         // $('form').formSubmit();
 
-        $('select.lang').on('change', function () {
-            $(this).closest('form').submit();
-        });
-
         $(".mat-input").focus(function () {
             $(this).parent().addClass("is-active is-completed");
         });
@@ -8232,6 +8228,10 @@ exports.default = {
             // templateResult: formatState,
             // templateSelection: formatState,
             minimumResultsForSearch: Infinity
+        });
+
+        $('select.lang').on('change', function () {
+            $(this).closest('form').submit();
         });
 
         // $('.lang').on("select2:select", function(e){
