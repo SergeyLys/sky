@@ -121,8 +121,12 @@ select {
 }
 
 .section-offset {
-  padding-top: 100px;
+  padding-top: 50px;
   position: relative;
+
+  @include breakpoint(medium) {
+    padding-top: 100px;
+  }
 
   &.has-image {
     @include breakpoint(large) {

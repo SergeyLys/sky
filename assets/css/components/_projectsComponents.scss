@@ -80,7 +80,7 @@
     margin-bottom: 30px;
 
     @include breakpoint(xlarge) {
-      margin-bottom: 100px;
+      margin-bottom: 180px;
       width: calc(100% - 100px);
       position: relative;
       padding-top: 54%;
@@ -173,8 +173,8 @@
   &:after {
     content: '';
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -182,6 +182,11 @@
     background: $white url(../images/play.png);
     background-position: center center;
     background-repeat: no-repeat;
+
+    @include breakpoint(medium) {
+      width: 120px;
+      height: 120px;
+    }
   }
 }
 

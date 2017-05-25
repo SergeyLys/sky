@@ -279,6 +279,7 @@
       @include breakpoint(large) {
         flex-direction: row;
         max-height: initial;
+        overflow: hidden;
       }
 
       a {

@@ -98,8 +98,8 @@
 
   .slick-next {
     right: 20px;
-    background: url(../images/slick-next.svg) no-repeat center;
-    border-color: transparent;
+    // background: url(../images/slick-next.svg) no-repeat center;
+    // border-color: transparent;
 
     @include breakpoint(large) {
       top: calc(50% - 30px);
@@ -276,7 +276,7 @@
 
 .home-verical-slider {
   margin-bottom: 0 !important;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 
   .image-holder {
     img {
